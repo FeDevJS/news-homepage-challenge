@@ -28,6 +28,7 @@ main {
   max-width: 1200px;
   min-height: 100vh;
   margin: 0 auto;
+  margin-bottom: 2rem;
   padding: .8rem;
   background-color: var(--neutral-white);
 }
