@@ -124,7 +124,7 @@ h1 {
 }
 .middle-section-right-para {
   width: 100%;
-  height: 20%;
+  height: 15%;
   color: var(--primary-light-orange);
   font-size: 1.7rem;
   font-weight: 700;
@@ -189,6 +189,53 @@ h1 {
 .bottom-article-description {
   color: var(--neutral-gray-blue);
   font-size: .9rem;
+}
+@media screen and (min-width: 340px) and (max-width: 700px) {
+  main {
+    grid-template-rows: repeat(3, max-content);
+    padding: 0;
+  }
+  .middle-section {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, max-content);
+    row-gap: 1.5rem;
+  }
+  .middle-section-left {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    row-gap: .5rem;
+  }
+  .middle-section-left-top {
+    height: max-content;
+  }
+  .middle-section-left-bottom {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+  }
+  .middle-section-right-bottom {
+    padding: 0;
+  }
+  .middle-section-left-bottom-wrapper {
+    width: 100%;
+  }
+  .middle-section-right-bottom {
+    width: 100%;
+    row-gap: 1.5rem;
+  }
+  .middle-section-left-bottom-header {
+    max-width: 350px;
+  }
+  .middle-section-right {
+    padding: .6;
+  }
+  .bottom-section {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, max-content);
+    row-gap: 2rem;
+  }
 }
 @media screen and (min-width: 850px) {
   .nav-item:hover {
