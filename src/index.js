@@ -19,6 +19,18 @@ const insertDesktopNav = () => {
   if(mobileNavInserted) mobileNavInserted = false
 }
 
+const insertMobileNavModal = () => {
+  const $mobileNavModal = document.querySelector('#mobile-nav-modal-template').content.cloneNode(true)
+  document.body.appendChild($mobileNavModal)
+  return
+}
+
+const removeMobileNavModal = () => {
+  const $mobileNavModal = document.querySelector('.mobile-nav-modal')
+  $mobileNavModal.remove()
+  return
+}
+
 const useMobileNav = () => {
   if(desktopNavInserted) {
     const $desktopNavMenuContainer = document.querySelector('.nav-items-container')
@@ -59,6 +71,15 @@ window.addEventListener('DOMContentLoaded', () => {
   else if(desktopWidth) {
     insertDesktopNav()
   }
+  document.addEventListener('click', (e) => {
+    const target = e.target
+    if(target.matches('.mobile-nav-menu-icon')) {
+      insertMobileNavModal()
+    } 
+    else if(target.matches('.close-btn')) {
+      removeMobileNavModal()
+    }
+  })
   window.addEventListener('resize', () => {
     detectWidth()
   })
