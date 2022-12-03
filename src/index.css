@@ -245,7 +245,7 @@ h1 {
     row-gap: 2rem;
   }
 }
-@media screen and (min-width: 8750px) {
+@media screen and (min-width: 875px) {
   .nav-item:hover {
     color: var(--primary-dark-orange);
   }
