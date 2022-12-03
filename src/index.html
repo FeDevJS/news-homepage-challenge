@@ -10,13 +10,6 @@
     <header>
       <nav class='nav-wrapper'>
         <img src='../assets/logo.svg' alt='Logo compañía' width='45px' height='30px'>
-        <ul class='nav-items-container'>
-          <li class="nav-item">Inicio</li>
-          <li class="nav-item">Nuevo</li>
-          <li class="nav-item">Popular</li>
-          <li class="nav-item">Trending</li>
-          <li class="nav-item">Categorías</li>
-        </ul>
       </nav>
     </header>
     <section class='middle-section'>
@@ -80,7 +73,7 @@
       </article>
     </section>
   </main>
-  <template id='mobile-nav-template'>
+  <template id='mobile-nav-modal-template'>
     <section class='mobile-nav-modal'>
       <div class='layer'></div>
       <article class='mobile-nav-wrapper'>
@@ -96,6 +89,18 @@
         </ul>
       </article>
     </section>
+  </template>
+  <template id='desktop-nav-template'>
+    <ul class='nav-items-container'>
+      <li class="nav-item">Inicio</li>
+      <li class="nav-item">Nuevo</li>
+      <li class="nav-item">Popular</li>
+      <li class="nav-item">Trending</li>
+      <li class="nav-item">Categorías</li>
+    </ul>
+  </template>
+  <template id='mobile-nav-template'>
+    <img class='mobile-nav-menu-icon' src='../assets/icon-menu.svg' alt='icono-menú'>
   </template>
 </body>
 </html>
