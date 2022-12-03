@@ -57,6 +57,9 @@ const detectWidth = () => {
     return
   } 
   else if(desktopWidth) {
+    if(document.querySelector('.mobile-nav-modal')) {
+      removeMobileNavModal()
+    }
     useDesktopNav()
     return
   }

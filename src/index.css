@@ -291,6 +291,7 @@ h1 {
   display: flex;
   flex-flow: column wrap;
   width: 75%;
+  max-width: 350px;
   height: 100%;
   background-color: var(--neutral-white);
   z-index: 10;
